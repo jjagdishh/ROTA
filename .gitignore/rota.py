@@ -8,9 +8,7 @@ def main():
     import urllib.request
     from urllib.request import urlopen
     import csv
-    print("       Welcome to my tool \n       This is an tool to calculate the Out Of office Hours duties for any GROUP !! ")
-    print("url Hint: 'file:///D:/userdata/jmathpal/Desktop/Schedule.cgi'")
-    url = input("Please enter the URL:")
+    url = "https://github.com/jjagdishh/ROTA/blob/master/schedule.cgi"
     page = urlopen(url)
     soup = BeautifulSoup(page, 'lxml')  # Parse the html in the 'page' variable, and store it in Beautiful Soup format
     table = soup.find('table')
